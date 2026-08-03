@@ -1,0 +1,24 @@
+name: My First CI
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Start Pipeline
+        run: echo "Starting CI Pipeline"
+
+      - name: Current User
+        run: whoami
+
+      - name: OS Information
+        run: uname -a
+
+      - name: List Files
+        run: ls -la
