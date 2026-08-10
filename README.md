@@ -1,1 +1,1 @@
-# github-actions-devops-labss1
+# github-actions-devops-labs
